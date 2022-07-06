@@ -18,7 +18,7 @@ const picturesArray = [
     "phone-15.png",
 
 ];
-let counter = 0 ; 
+let counter = 0;
 async function getDevices() {
     try {
         let devices = await fetch(DEVICES_API).then(res => res.json())
@@ -36,12 +36,9 @@ function cardTemplate(device) {
     let { id, brand, price, isAvailable, color, picture, ram } = device
     return `
 
-    <div class="card col-4 row-3">
+    <div class="row row-cols-1 px-4 pb-4">
+    <div class="card col">
       <img src="/images/${picturesArray[counter++]}" class="card-img-top" >
-      <div class="card-body">
-        <p class="card-text"></p>
-        <p class="card-text"></small>
-        </div>
         <div>${brand}</div>
         <div>${price}</div>
         <div>${color}</div>
@@ -49,10 +46,9 @@ function cardTemplate(device) {
         <div>${isAvailable}</div>
         <div>${id}</div>
         <div>${picture}</div>
+        <a herf=# class="btn btn-dark">Delete</a>
         </div>
-        </p>
-      </div>
- 
+    </div>
     `
 }
 getDevices()

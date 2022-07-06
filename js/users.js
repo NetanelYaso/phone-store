@@ -16,18 +16,15 @@ function usersTable() {
         .then(result => {
             result.forEach(item => {
                 user_Table.innerHTML += 
-                ` 
-                
+                `
                 <tr>
                 <td>${item.age}</td>
                 <td>${item.name.first}</td>
                 <td>${item.name.last}</td>
                 <td>${item.email}</td>
-                
                 <td>${item.index}</td>
                 <td>${item.phone}</td>
                 <td>${item.picture}</td>
-                
                 </tr>
                 `
             });

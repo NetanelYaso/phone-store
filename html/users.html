@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html"><img width="50" id="company_logo" class="rounded-circle"
@@ -52,15 +52,22 @@
     </header>
 
     <section>
-        <table id="user_Table">
-            <thead>
-                <th>age</th>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>phone</th>
-                <th>picture</th>
+        <table id="user_Table" class="table  table-bordered">
+            <thead >
+                <div class="d-flex flex-column">
+                    <div class="col-12 col-sm-6">
+                        <th>age</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <th>Email</th>
+                        <th>Index</th>
+                        <th>phone</th>
+                        <th>picture</th>
+                    </div>
 
+                </div>
             </thead>
         </table>
     </section>

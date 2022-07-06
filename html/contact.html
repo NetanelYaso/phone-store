@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html"><img width="50" id="company_logo" class="rounded-circle"
@@ -55,13 +55,14 @@
         <div>
             <h2 class="d-flex justify-content-center fst-italic">Contact</h2>
             <h4 class="d-flex justify-content-center fst-italic">Let Us Know What's On Your Mind</h4>
-            <form submit="" class="d-flex flex-column gap-2 col-6 mb-4 align-items-center">
+            <form submit="" class="d-flex flex-column gap-2 col-6 mb-4  align-items-center ">
                 <label for="fname">Enter Your First Name:</label>
                 <input type="text" id="fname">
                 <label for="lname">Enter Your Last Name:</label>
                 <input type="text" id="lname">
                 <label for="user_email">Enter Your Email: </label>
                 <input type="email" id="user_email">
+                
                 <button class="btn btn-outline-success">Submit</button>
             </form>
         </div>
@@ -70,7 +71,7 @@
     </section>
 
 
-    <footer class="bg-light text-center text-white">
+    <footer class="bg-light text-center text-white fixed-bottom">
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #3b5998;"
