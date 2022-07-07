@@ -37,9 +37,6 @@
                             <a class="nav-link" href="/html/devices.html">Devices</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/form.html">Form</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/html/users.html">Users</a>
                         </li>
                         <li class="nav-item">
@@ -53,7 +50,7 @@
             </div>
         </nav>
     </header>
-
+    <div id="load__gif"></div>
     <section>
         <table id="user_Table" class="table  table-bordered">
             <thead>
@@ -69,10 +66,25 @@
                         <th>phone</th>
                         <th>picture</th>
                     </div>
-
                 </div>
             </thead>
         </table>
+        <h1 class="d-flex justify-contect-center">We Would Be Happy If You Add Yourself :</h1>
+        <form onsubmit="sendObject()" class="mt-2">
+            <label for="">Enter Your Age :</label>
+            <input type="number" id="Inputage">
+            <label for="">Enter First Name :</label>
+            <input type="text" id="InputFirstName">
+            <label for="">Enter Last Name :</label>
+            <input type="text" id="InputLastName">
+            <label for="">Enter Your Email :</label>
+            <input type="email" id="Inputemail">
+            <label for="">Enter Your Email :</label>
+            <input type="number" id="Inputindex" max="1">
+            <label for="">Enter Your Email :</label>
+            <input type="number" id="Inputphone">
+            <button id="formBtn" >Add</button>
+        </form>
     </section>
 
     <footer class="bg-light text-center text-white">

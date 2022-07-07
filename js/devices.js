@@ -21,6 +21,7 @@ const picturesArray = [
 let counter = 0;
 async function getDevices() {
     try {
+        loading_gif.innerHTML = "<img src = '../images/loading_gif-3.png'>";
         let devices = await fetch(DEVICES_API).then(res => res.json())
         devices.forEach(device => {
             cardsContainer.innerHTML += cardTemplate(device)
@@ -29,13 +30,15 @@ async function getDevices() {
     catch (error) {
         console.log("error");
     }
-    finally { }
+    finally { 
+        loading_gif.innerHTML = " ";
+ 
+    }
 }
 
 function cardTemplate(device) {
     let { id, brand, price, isAvailable, color, picture, ram } = device
     return `
-
     <div class="row row-cols-1 px-4 pb-4">
     <div class="card col">
       <img src="/images/${picturesArray[counter++]}" class="card-img-top" >
