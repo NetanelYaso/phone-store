@@ -21,7 +21,7 @@ const picturesArray = [
 let counter = 0;
 async function getDevices() {
     try {
-        loading_gif.innerHTML = "<img src = '../images/loading_gif-3.png'>";
+        loading_gif.innerHTML = `<img src = '../images/loading_gif-3.png'>`;
         let devices = await fetch(DEVICES_API).then(res => res.json())
         devices.forEach(device => {
             cardsContainer.innerHTML += cardTemplate(device)

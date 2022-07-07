@@ -41,6 +41,9 @@
                             <a class="nav-link" href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="addObject.html">Join Us</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
@@ -51,20 +54,37 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div>
-            <h2 class="d-flex justify-content-center fst-italic">Contact</h2>
-            <h4 class="d-flex justify-content-center fst-italic">Let Us Know What's On Your Mind</h4>
-            <form submit="" class="d-flex flex-column gap-2 col-6 mb-4  align-items-center ">
-                <label for="fname">Enter Your First Name:</label>
-                <input type="text" id="fname">
-                <label for="lname">Enter Your Last Name:</label>
-                <input type="text" id="lname">
-                <label for="user_email">Enter Your Email: </label>
-                <input type="email" id="user_email">
-               <a href="mailto:netanelyaso12@gmail.com"><button class="btn btn-outline-success"> Submit</button></a> 
-            </form>
-        </div>
+    <section class="container mt-3">
+        <form>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form3Example1">First name</label>
+                  <input type="text" id="form3Example1" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  <input type="text" id="form3Example2" class="form-control" />
+                </div>
+              </div>
+            </div>
+          
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">Email address</label>
+              <input type="email" id="form3Example3" class="form-control" />
+            </div>
+
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <label class="form-check-label" for="form2Example33">
+                Subscribe to our newsletter
+              </label>
+            </div>
+          
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+          </form>
 
 
     </section>

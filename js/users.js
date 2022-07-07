@@ -34,15 +34,17 @@ usersTable();
 async function sendObject() {
     const data = {
         age: Inputage.value,
-        name: InputFirstName.value,
+        name: {
+            last: "",
+            first: ""
+        },
         email: InputLastName.value,
         index: Inputemail.value,
         phone: Inputindex.value,
         picture: Inputphone.value
     }
     try {
-        load_gif.innerHTML = "<img src = '../images/loading_gif-3.png'>";
-        return await fetch(USERS_API, {
+        await fetch(USERS_API, {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
@@ -55,7 +57,7 @@ async function sendObject() {
     catch (error) {
         console.log("error");
     }
-    finally { 
-        load__gif.innerHTML += " ";
-    }
+    finally {
+        alert("sended to us :)")
+     }
 }

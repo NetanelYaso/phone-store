@@ -14,7 +14,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -22,8 +21,8 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img width="50" id="company_logo" class="rounded-circle"
-                        src="images\company logo-1.png"></a>
+                <a class="navbar-brand" href="/index.html"><img width="50" id="company_logo" class="rounded-circle"
+                        src="/images/company logo-1.png"></a>
                 <a class="navbar-brand" href="#"> Netanel Yaso</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,70 +31,83 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/devices.html">Devices</a>
+                            <a class="nav-link" href="devices.html">Devices</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/users.html">Users</a>
+                            <a class="nav-link" href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/addObject.html">Join Us</a>
+                            <a class="nav-link" href="addObject.html">Join Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/about.html">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div id="Loader"></div>
-    <section>
-        <div>
-            <h2 class="d-flex justify-content-center">The Mobiles You Love From</h2>
-            <h2 class="d-flex justify-content-center">a Place You Can Trust.</h2>
-
-            <div>
-                <iframe id="homepage_video" src="https://www.youtube.com/embed/mrkAmmMakMg" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <img src="https://kyoceramobile.com/wp-content/uploads/2022/04/global-nav-total-solutions-small.gif"
-                                width="100%" height="100%">
-                        </div>
-                        <div class="col order-5">
-                            <img src="https://www.smartcellular.ae/media/magiccart/magicslider/l/a/latest_iphones_uk_1.gif"
-                                width="100%" height="100%">
-                        </div>
-                        <div class="col order-1">
-                            <img src="https://support.monday.com/hc/article_attachments/115006828289/big-ezgif.gif"
-                                width="100%" height="100%">
-                        </div>
+    <section class="container">
+        <form>
+            <div class="row mb-4">
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example4">age</label>
+                    <input type="number" id="form6Example4" class="form-control" />
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form6Example1">First name</label>
+                        <input type="text" id="form6Example1" class="form-control" />
                     </div>
                 </div>
-
-
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form6Example2">Last name</label>
+                        <input type="text" id="form6Example2" class="form-control" />
+                    </div>
+                </div>
             </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example5">Email</label>
+                <input type="email" id="form6Example5" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">Index</label>
+                <input type="number" id="form6Example3" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example6">picture</label>
+                <input type="text" id="form6Example6" class="form-control" />
+            </div>
+            </div>
+
+
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                <label class="form-check-label" for="form6Example8">Im not a robot.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mb-4">Place me</button>
+        </form>
     </section>
-    <section>
-        
-    </section>
+
     <footer class="bg-light text-center text-white">
         <div class="container p-4 pb-0">
             <section class="mb-4">
-                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #3b5998;"
+                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #333333;"
                     href="https://www.facebook.com/netanel.yaso.5" role="button"><i class="bi bi-facebook"></i></a>
-                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #dd4b39;"
+                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #333333;"
                     href="https://mail.google.com/mail/u/0/#inbox" role="button"><i class="bi bi-google"></i></a>
-                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #0082ca;"
+                <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #333333;"
                     href="https://www.linkedin.com/in/netanel-yaso-438150238/" role="button"><i
                         class="bi bi-linkedin"></i></a>
                 <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #333333;"
@@ -107,7 +119,7 @@
             <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="/js/users.js"></script>
 </body>
 
 </html>
