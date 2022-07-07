@@ -41,7 +41,7 @@ function cardTemplate(device) {
     return `
     <div class="row row-cols-1 px-4 pb-4">
     <div class="card col">
-      <img src="/images/${picturesArray[counter++]}" class="card-img-top" >
+      <img src="../images/${picturesArray[counter++]}" class="card-img-top" >
         <div>${brand}</div>
         <div>${price}</div>
         <div>${color}</div>
