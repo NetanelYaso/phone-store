@@ -2,6 +2,7 @@ const USERS_API = "https://my-json-server.typicode.com/Jeck99/fake-server/users"
 let user_Table = document.getElementById("user_Table");
 async function getUsers() {
     try {
+
         return await fetch(USERS_API)
             .then(res => res.json())
     }
@@ -14,8 +15,7 @@ function usersTable() {
     getUsers()
         .then(result => {
             result.forEach(item => {
-                user_Table.innerHTML +=
-                    `
+                user_Table.innerHTML += `
                 <tr>
                 <td>${item.age}</td>
                 <td>${item.name.first}</td>
@@ -58,6 +58,6 @@ async function sendObject() {
         console.log("error");
     }
     finally {
-        alert("sended to us :)")
-     }
+        alert("sended to us :)");
+    }
 }
