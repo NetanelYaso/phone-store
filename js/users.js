@@ -2,7 +2,6 @@ const USERS_API = "https://my-json-server.typicode.com/Jeck99/fake-server/users"
 let user_Table = document.getElementById("user_Table");
 async function getUsers() {
     try {
-
         return await fetch(USERS_API)
             .then(res => res.json())
     }
