@@ -1,21 +1,9 @@
 const DEVICES_API = "https://my-json-server.typicode.com/Jeck99/fake-server/devices";
 let cardsContainer = document.getElementById('cards-container');
 const picturesArray = [
-    "phone-1.png",
-    "phone-2.png",
-    "phone-3.png",
-    "phone-4.png",
-    "phone-5.png",
-    "phone-6.png",
-    "phone-7.png",
-    "phone-8.png",
-    "phone-9.png",
-    "phone-10.png",
-    "phone-11.png",
-    "phone-12.png",
-    "phone-13.png",
-    "phone-14.png",
-    "phone-15.png",
+"https://www.ivory.co.il/files/catalog/org/1652966067c67NF.jpg",
+"https://www.ivory.co.il/files/catalog/org/1651050178d78UC.jpg",
+"https://www.ivory.co.il/files/catalog/org/1656598251p51Nv.jpg"
 
 ];
 let counter = 0;
